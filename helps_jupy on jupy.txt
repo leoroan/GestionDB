@@ -1,0 +1,17 @@
+Run
+
+!pip install ipynb
+
+and then import the other notebook as
+
+from ipynb.fs.full.<notebook_name> import *
+
+or
+
+from ipynb.fs.full.<notebook_name> import <function_name>
+
+Make sure that all the notebooks are in the same directory.
+
+Edit 1: You can see the official documentation here - https://ipynb.readthedocs.io/en/stable/
+
+Also, if you would like to import only class & function definitions from a notebook (and not the top level statements), you can use ipynb.fs.defs instead of ipynb.fs.full. Full uppercase variable assignment will get evaluated as well.
